@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+:root {
+  --font-display: "Roboto", sans-serif;
+  --font-heading: "Roboto", sans-serif;
+  --primary-button: #242742;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: var(--font-display);
+}
+
+body {
+  background-color: #36384e;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.primary-button {
+  background-color: #242742;
+}
+
+#email.just-validate-error-field,
+input.just-validate-error-field {
+  border: 2px solid #ef4444 !important;
+  border-color: #ef4444 !important;
+}
+
+input.just-validate-success-field {
+  border: 2px solid #22c55e !important;
+  border-color: #22c55e !important;
+}
