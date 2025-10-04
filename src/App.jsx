@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import JustValidate from "just-validate";
 import "./App.css";
+import illustrationDesktop from "../assets/images/illustration-sign-up-desktop.svg";
+import illustrationMobile from "../assets/images/illustration-sign-up-mobile.svg";
 
 function App() {
   const validationRef = useRef(null);
@@ -56,10 +58,10 @@ function App() {
             <picture>
               <source
                 media="(min-width: 1024px)"
-                srcSet="./assets/images/illustration-sign-up-desktop.svg"
+                srcSet={illustrationDesktop}
               />
               <img
-                src="./assets/images/illustration-sign-up-mobile.svg"
+                src={illustrationMobile}
                 alt="Sign up illustration"
                 className="w-full h-auto"
               />
