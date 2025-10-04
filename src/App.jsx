@@ -56,10 +56,10 @@ function App() {
             <picture>
               <source
                 media="(min-width: 1024px)"
-                srcSet="/assets/images/illustration-sign-up-desktop.svg"
+                srcSet="./assets/images/illustration-sign-up-desktop.svg"
               />
               <img
-                src="/assets/images/illustration-sign-up-mobile.svg"
+                src="./assets/images/illustration-sign-up-mobile.svg"
                 alt="Sign up illustration"
                 className="w-full h-auto"
               />
